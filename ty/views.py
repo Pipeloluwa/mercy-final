@@ -76,7 +76,7 @@ def about(request):
     # if len(Borrower_User.objects.get(username=request.user).user_details.all()) >= 1:
     #     ax = True
 
-    return render(request,"about.html",{"ax":ax})
+    return render(request,"about.html",{"ax":False})
 
 def contact(request):
     ax= False
