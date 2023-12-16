@@ -72,9 +72,9 @@ def index(request):
 
 
 def about(request):
-    ax= False
-    if len(Borrower_User.objects.get(username=request.user).user_details.all()) >= 1:
-        ax = True
+    # ax= False
+    # if len(Borrower_User.objects.get(username=request.user).user_details.all()) >= 1:
+    #     ax = True
 
     return render(request,"about.html",{"ax":ax})
 
